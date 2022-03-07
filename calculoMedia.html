@@ -1,0 +1,21 @@
+<meta charset="UTF-8">
+<script>
+
+    function obterNumeroInserido(n) {
+        return parseInt(prompt("Digite aqui um numero."));
+    }
+
+    let somaTotal = 0;
+
+    for (let i = 0; i < 4; i++) {
+        let n = (i + 1);
+        numeroInserido = obterNumeroInserido(n);
+        somaTotal += numeroInserido;
+
+    }
+
+
+    let media = (somaTotal / 4);
+
+    document.write("A média dos valores dados é: " + media + ".");
+</script>
