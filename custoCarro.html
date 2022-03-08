@@ -1,0 +1,24 @@
+<meta charset="UTF-8">
+5. O custo ao consumidor de um carro novo é a soma do custo de fábrica com a
+porcentagem do distribuidor e dos impostos, ambos aplicados ao custo de fábrica.
+Supondo que a porcentagem do distribuidor seja de 12% e a dos impostos de 45%,
+prepare um algoritmo para ler o custo de fábrica do carro e imprimir o custo ao
+consumidor.
+<script>
+    function obterCustoFabrica() {
+        return parseFloat(prompt("Digite aqui o custo de fabrica."));
+    }
+
+    function obterCustoConsumidor() {
+        let porcentagemDistribuidor = 12;
+        let impostos = 45;
+        let porcentagemParcial = porcentagemDistribuidor + impostos;
+        let custoFabrica = obterCustoFabrica();
+        let porcentagemFinal = parseFloat((porcentagemParcial * custoFabrica)/100);
+        
+        return parseFloat(custoFabrica + porcentagemFinal);
+    }
+
+    document.write("O valor do custo do consumidor é: " + obterCustoConsumidor());
+
+</script>
